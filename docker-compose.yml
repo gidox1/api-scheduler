@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  database:
+    container_name: schedulerDB
+    image: mysql:5.7
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
+    ports:
+        - "3310:3306"
+    environment:
+        MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+        MYSQL_USER: "schUser"
+        MYSQL_PASSWORD: "schPass"
+        MYSQL_DATABASE: "schDB"
+    networks:
+        - main_network
+networks:
+  main_network:
+    driver: bridge

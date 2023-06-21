@@ -1,0 +1,404 @@
+2023-06-20 12:39:35,025 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 12:39:35,031 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 12:39:37,081 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 12:39:37,365 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 12:39:37,370 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 12:40:11,281 INFO werkzeug Thread-2 : 127.0.0.1 - - [20/Jun/2023 12:40:11] "[32mGET /user HTTP/1.1[0m" 308 -
+2023-06-20 12:40:11,285 INFO application Thread-3 : fetching users
+2023-06-20 12:40:11,286 INFO werkzeug Thread-3 : 127.0.0.1 - - [20/Jun/2023 12:40:11] "GET /user/ HTTP/1.1" 200 -
+2023-06-20 12:41:24,731 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/src/factory.py', reloading
+2023-06-20 12:41:39,835 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 12:41:39,839 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 12:41:40,087 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 12:41:40,093 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:02:18,849 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 13:02:18,853 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:02:19,113 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:02:19,121 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:02:25,162 INFO werkzeug Thread-2 : 127.0.0.1 - - [20/Jun/2023 13:02:25] "[32mGET /user HTTP/1.1[0m" 308 -
+2023-06-20 13:02:25,165 INFO application Thread-3 : fetching users
+2023-06-20 13:02:25,166 INFO werkzeug Thread-3 : 127.0.0.1 - - [20/Jun/2023 13:02:25] "GET /user/ HTTP/1.1" 200 -
+2023-06-20 13:02:49,492 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 13:02:49,532 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:02:49,846 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:02:49,852 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:02:51,896 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 13:02:51,929 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:02:52,201 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:02:52,207 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:03:04,367 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 13:03:04,400 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:03:04,659 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:03:04,664 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:03:04,874 INFO application MainThread : server started!
+2023-06-20 13:03:06,195 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 13:03:06,198 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:03:06,450 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:03:06,455 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:03:19,587 INFO werkzeug Thread-2 : 127.0.0.1 - - [20/Jun/2023 13:03:19] "[32mGET /user HTTP/1.1[0m" 308 -
+2023-06-20 13:03:19,591 INFO application Thread-3 : fetching users
+2023-06-20 13:03:19,592 INFO werkzeug Thread-3 : 127.0.0.1 - - [20/Jun/2023 13:03:19] "GET /user/ HTTP/1.1" 200 -
+2023-06-20 13:03:21,415 INFO application MainThread : server started!
+2023-06-20 13:03:21,450 INFO application MainThread : server started!
+2023-06-20 13:03:24,684 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 13:03:24,687 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:03:24,944 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:03:24,950 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:03:26,663 INFO application MainThread : server started!
+2023-06-20 13:03:26,700 INFO application MainThread : server started!
+2023-06-20 13:40:40,473 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 13:40:40,475 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:40:40,944 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:40:40,955 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:47:16,237 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:47:16,300 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:47:17,033 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:47:17,040 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:48:49,473 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:48:49,570 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:48:50,418 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:48:50,426 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:49:01,651 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:49:01,711 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:49:02,166 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:49:02,172 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:49:07,271 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:49:07,332 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:49:07,804 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:49:07,810 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:49:11,899 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:49:11,971 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:49:12,506 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:49:12,512 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:49:25,720 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:49:25,778 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:49:26,209 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:49:26,215 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:49:33,348 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:49:33,405 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:49:33,904 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:49:33,910 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:49:36,988 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:49:37,053 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:49:37,584 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:49:37,590 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:50:04,022 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:50:04,087 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:50:04,584 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:50:04,590 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:50:40,168 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:50:40,227 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:50:40,683 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:50:40,689 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:50:43,760 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:50:43,818 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:50:44,296 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:50:44,304 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:50:46,368 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:50:46,429 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:50:46,924 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:50:46,930 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 13:50:50,005 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/alembic/env.py', reloading
+2023-06-20 13:50:50,062 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 13:50:50,581 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 13:50:50,588 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 14:10:15,073 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 14:10:15,204 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 14:10:15,660 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 14:10:15,670 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 14:10:18,775 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 14:10:18,836 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:01:37,926 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:01:37,929 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:01:38,512 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:01:38,520 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:02:04,993 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:02:05,150 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:02:05,931 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:02:05,941 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:03:32,426 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:03:32,497 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:03:33,043 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:03:33,050 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:04:11,728 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:04:11,795 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:04:12,399 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:04:12,405 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:12:19,869 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:12:19,937 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:12:20,828 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:12:20,835 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:12:21,879 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:12:21,947 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:12:22,478 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:12:22,485 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:13:58,112 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:13:58,190 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:13:58,778 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:13:58,785 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:14:00,858 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:14:00,943 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:14:01,668 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:14:01,675 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:16:05,732 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:16:05,797 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:16:06,642 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:16:06,656 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:18:03,713 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:18:03,780 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:18:04,670 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:18:04,678 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:18:05,751 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:18:05,906 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:18:06,634 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:18:06,641 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:18:49,380 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:18:49,474 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:18:50,120 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:18:50,128 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:21:32,905 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:21:32,973 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:21:33,869 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:21:33,876 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:22:58,499 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:22:58,589 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:24:49,696 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:24:49,698 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:24:50,241 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:24:50,277 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:25:35,202 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:25:35,279 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:25:54,415 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:25:54,416 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:25:55,005 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:25:55,012 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:28:42,857 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:28:42,929 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:28:43,870 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:28:43,876 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:28:47,559 INFO application MainThread : server started!
+2023-06-20 15:28:47,632 INFO application MainThread : server started!
+2023-06-20 15:28:49,220 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:28:49,221 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:28:49,750 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:28:49,757 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:30:29,542 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/db.py', reloading
+2023-06-20 15:30:29,613 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:30:30,333 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:30:30,340 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:30:34,432 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/db.py', reloading
+2023-06-20 15:30:34,507 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:30:53,960 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:30:53,961 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:30:54,479 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:30:54,486 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:31:14,849 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/db.py', reloading
+2023-06-20 15:31:14,910 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:31:15,486 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:31:15,493 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:31:25,728 INFO application MainThread : server started!
+2023-06-20 15:31:25,853 INFO application MainThread : server started!
+2023-06-20 15:31:27,810 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:31:27,812 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:31:28,395 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:31:28,402 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:35:46,850 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/db.py', reloading
+2023-06-20 15:35:46,945 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:35:47,863 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:35:47,873 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:35:49,964 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/db.py', reloading
+2023-06-20 15:35:50,085 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:35:50,814 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:35:50,821 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:36:29,123 INFO application MainThread : server started!
+2023-06-20 15:36:29,258 INFO application MainThread : server started!
+2023-06-20 15:36:31,087 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:36:31,088 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:36:31,638 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:36:31,645 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:37:19,444 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/db.py', reloading
+2023-06-20 15:37:19,518 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:37:41,734 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:37:41,735 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:37:42,292 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:37:42,298 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:40:52,557 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/test.py', reloading
+2023-06-20 15:40:52,637 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:40:53,539 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:40:53,576 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:40:58,775 INFO application MainThread : server started!
+2023-06-20 15:40:58,895 INFO application MainThread : server started!
+2023-06-20 15:44:19,370 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:44:19,372 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:44:19,895 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:44:19,901 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:45:42,468 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:45:42,537 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:46:03,099 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:46:03,101 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:46:03,703 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:46:03,709 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:46:15,942 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:46:16,020 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:46:16,589 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:46:16,597 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:46:18,660 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:46:18,727 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:46:19,262 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:46:19,268 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:46:20,314 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:46:20,401 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:46:20,989 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:46:20,995 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:47:24,075 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:47:24,141 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:47:24,972 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:47:24,981 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:51:05,749 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:51:05,856 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:51:06,727 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:51:06,734 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:51:09,805 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:51:09,875 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:51:10,410 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:51:10,416 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:51:25,710 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:51:25,791 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:51:26,356 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:51:26,362 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:51:30,452 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:51:30,523 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:51:31,064 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:51:31,070 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:51:32,114 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:51:32,178 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:51:32,689 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:51:32,695 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:51:50,012 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:51:50,087 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:51:50,736 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:51:50,747 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:11,112 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/db.py', reloading
+2023-06-20 15:52:11,198 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:11,757 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:11,764 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:18,970 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:52:19,042 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:19,597 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:19,604 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:23,705 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:52:23,774 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:24,296 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:24,303 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:32,490 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:52:32,568 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:33,128 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:33,134 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:35,193 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:52:35,315 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:35,971 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:35,978 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:38,056 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:52:38,129 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:38,693 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:38,704 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:41,794 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:52:41,862 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:42,373 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:42,379 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:52:49,675 INFO application MainThread : server started!
+2023-06-20 15:52:49,775 INFO application MainThread : server started!
+2023-06-20 15:52:51,679 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-20 15:52:51,680 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:52:52,192 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:52:52,198 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:53:21,727 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/src/model/user.py', reloading
+2023-06-20 15:53:21,792 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:53:22,303 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:53:22,310 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:54:09,110 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:54:09,187 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:54:09,761 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:54:09,767 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:54:12,847 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:54:12,937 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:54:13,522 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:54:13,528 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:55:09,500 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:55:09,587 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:55:10,144 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:55:10,151 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:55:12,211 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:55:12,278 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:55:12,949 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:55:12,955 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:55:16,031 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-20 15:55:16,105 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-20 15:55:16,669 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-20 15:55:16,675 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-20 15:55:36,021 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/application.py', reloading
+2023-06-20 15:55:36,088 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 00:20:00,688 ERROR flask_migrate MainThread : Error: Directory migrations already exists and is not empty
+2023-06-21 00:36:16,878 ERROR flask_migrate MainThread : Error: Directory migrations already exists and is not empty
+2023-06-21 00:39:40,153 ERROR flask_migrate MainThread : Error: Directory migrations already exists and is not empty
+2023-06-21 21:39:56,563 ERROR flask_migrate MainThread : Error: Directory migrations already exists and is not empty
+2023-06-21 21:40:17,596 ERROR flask_migrate MainThread : Error: Path doesn't exist: '/Users/macbookpro/api-scheduler/migrations'.  Please use the 'init' command to create a new scripts folder.
+2023-06-21 21:48:47,944 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-21 21:48:47,945 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 21:48:48,475 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 21:48:48,485 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 21:49:18,035 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-21 21:49:18,098 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 21:49:18,802 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 21:49:18,811 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 21:49:19,864 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-21 21:49:19,931 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 21:49:20,462 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 21:49:20,468 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 21:49:43,381 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-21 21:49:43,382 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 21:49:43,865 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 21:49:43,872 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 21:50:37,822 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/migrations/env.py', reloading
+2023-06-21 21:50:37,890 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 21:50:38,483 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 21:50:38,489 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 21:51:38,523 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/src/model/user.py', reloading
+2023-06-21 21:51:38,598 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:28:37,000 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-21 22:28:37,002 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:28:37,550 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:28:37,561 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 22:28:41,103 INFO werkzeug Thread-2 : 127.0.0.1 - - [21/Jun/2023 22:28:41] "[32mGET /user HTTP/1.1[0m" 308 -
+2023-06-21 22:28:41,108 INFO application Thread-3 : fetching users
+2023-06-21 22:28:41,108 INFO werkzeug Thread-3 : 127.0.0.1 - - [21/Jun/2023 22:28:41] "GET /user/ HTTP/1.1" 200 -
+2023-06-21 22:28:53,850 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-21 22:28:53,933 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:28:54,474 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:28:54,479 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 22:28:56,539 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-21 22:28:56,604 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:28:57,141 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:28:57,149 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 22:28:58,188 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-21 22:28:58,257 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:28:58,818 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:28:58,824 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 22:29:01,909 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-21 22:29:01,976 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:29:02,516 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:29:02,522 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 22:29:09,676 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/main.py', reloading
+2023-06-21 22:29:09,744 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:29:10,303 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:29:10,309 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 22:29:58,121 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/src/factory.py', reloading
+2023-06-21 22:29:58,188 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:29:58,748 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:29:58,756 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
+2023-06-21 22:30:01,840 INFO werkzeug MainThread :  * Detected change in '/Users/macbookpro/api-scheduler/src/factory.py', reloading
+2023-06-21 22:30:01,908 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:33:32,565 INFO werkzeug MainThread :  * Running on http://localhost:6000/ (Press CTRL+C to quit)
+2023-06-21 22:33:32,566 INFO werkzeug MainThread :  * Restarting with stat
+2023-06-21 22:33:33,054 WARNING werkzeug MainThread :  * Debugger is active!
+2023-06-21 22:33:33,060 INFO werkzeug MainThread :  * Debugger PIN: 111-107-410
