@@ -11,4 +11,4 @@ app = Flask(__name__)
 
 connection_string = f'mysql+pymysql://{user}:{password}@{host}/{database}'
 app.config['SQLALCHEMY_DATABASE_URI'] = connection_string
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # or True
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
