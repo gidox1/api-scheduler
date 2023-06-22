@@ -8,19 +8,20 @@ from flask_migrate import Migrate
 from application import app
 from flask import current_app
 
-host=os.getenv('DATABASE_HOST', '127.0.0.1')
-user=os.getenv('DATABASE_USER', 'schUser') 
-password=os.getenv('DATABASE_PASSWORD', 'schPass')
-db=os.getenv('DATABASE_NAME', 'schDB')
+host=os.getenv('DATABASE_HOST')
+user=os.getenv('DATABASE_USER') 
+password=os.getenv('DATABASE_PASSWORD')
+database=os.getenv('DATABASE_NAME')
+port=os.getenv('DATABASE_PORT', 3310)
 
 def connection() -> Connection:
   try:
     conn = pymysql.connect(
-      host='localhost',
-      user='schUser',
-      password='schPass',
-      database='schDB',
-      port=3310,
+      host,
+      user,
+      password,
+      database,
+      port,
       cursorclass=pymysql.cursors.DictCursor
     )
     print("successfully connected to the database")
@@ -29,13 +30,13 @@ def connection() -> Connection:
     print("failed to connect to database", e)
 
 def get_session():
-  pymysql_connection_string = f'mysql+pymysql://{user}:{password}@{host}/{db}'
+  pymysql_connection_string = f'mysql+pymysql://{user}:{password}@{host}/{database}'
   engine = create_engine(pymysql_connection_string)
   Session = sessionmaker(bind=engine)
   return Session()
 
 def get_connection_string() -> str:
-  return f'mysql+pymysql://{user}:{password}@{host}/{db}'
+  return f'mysql+pymysql://{user}:{password}@{host}/{database}'
 
 def get_db():
   with app.app_context():
