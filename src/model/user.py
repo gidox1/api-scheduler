@@ -3,6 +3,7 @@ from src.common import UserStatus, Role
 from flask_migrate import Migrate
 from application import app
 from sqlalchemy import UniqueConstraint
+import bcrypt
 
 db = get_db()
 
@@ -20,3 +21,6 @@ class User(db.Model):
 def user_model():
   migrate = Migrate(app, db)
   return User()
+
+def verify_password(password, hashed_password):
+  return bcrypt.checkpw(password.encode('utf-8'), hashed_password.encode('utf-8'))

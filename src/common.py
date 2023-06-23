@@ -1,16 +1,19 @@
 from enum import Enum
+import json
 import os
 import re
 import bcrypt
+from flask import Response, abort
 
 """
   True-Myth Implementation to handle result from function calls
 """
 class Result:
-  def __init__(self, success, value=None, error=None):
+  def __init__(self, success, value=None, error=None, status = None):
     self.success = success
     self.value = value
     self.error = error
+    self.status = status
 
   @staticmethod
   def success(value):
@@ -18,7 +21,8 @@ class Result:
 
   @staticmethod
   def failure(error):
-    return Result(False, error=error)
+    status = error['status'] if 'status' in error else 500
+    return Result(False, error=error, status=status)
     
   @staticmethod
   def isError(result):
@@ -58,8 +62,13 @@ def extract(dictionary, keys):
 def email_validator(email):
   regex = r'^[\w\.-]+@[\w\.-]+\.\w+$'
   if not re.match(regex, email):
-    return False
-  return True
+    return abort(
+        Response(
+            json.dumps({"message": "email is invalid", "code": 400, "status": "FAIL"}),
+            mimetype="application/json",
+            status=400,
+        )
+    )
 
 def validate_length(value, min_length, max_length):
   if len(value) < min_length or len(value) > max_length:

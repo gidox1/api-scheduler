@@ -1,11 +1,12 @@
-import json
+from typing import Dict
 import logging
 
-from sqlalchemy.exc import IntegrityError
+from sqlalchemy.exc import IntegrityError, NoResultFound
 from db import get_session
-from src.model.user import User
+from src.model.user import User, verify_password
 from src.common import Result, hash_password
 from src.mapper import map_user_data
+from flask_jwt_extended import create_access_token
 
 class UserService:
   def __init__(self, logger: logging.Logger):
@@ -16,9 +17,9 @@ class UserService:
     self.logger.info('fetching users')
     return {'users': "users here"}
 
-  def create(self, data):
+  def create(self, data) -> Result:
     self.logger.info(f"creating user account with email {data['email']}")
-    
+
     try:
       with get_session() as session:
         hashed_password = hash_password(data['password'])
@@ -42,6 +43,39 @@ class UserService:
         "error": "An error occurred while creating the user. Please try again later."
       })
 
+
+  def authenticate(self, data: Dict[str, str]) -> Result:
+    email = data['email']
+    password = data['password']
+
+    try:
+      with get_session() as session:
+        user: User = session.query(User).filter_by(email=email).one()
+        
+        if verify_password(password, user.password):
+          access_token = create_access_token(identity=user.email)
+          self.logger.info(f'User authenticated: {user.email}')
+          return Result.success({
+            "message": "User authentication successful",
+            "access_token": access_token
+          })
+        else:
+          self.logger.error(f'Invalid password for user: {user.email}')
+          return Result.failure({
+              "message": "Invalid credentials",
+              "status": 401
+          })
+    except NoResultFound:
+      self.logger.error(f'User does not exist: data({email})')
+      return Result.failure({
+        "message": "User not found",
+        "status": 404
+      })
+    except Exception as e:
+      self.logger.error(f'An unexpected error occured: {str(e)}')
+      return Result.failure({
+        "message": f'An unexpected error occured: {str(e)}'
+      })
 
 
   def listUsers(self):

@@ -64,15 +64,17 @@ def user_creation_validation():
           'SUPER_ADMIN'),
       help='Invalid role',
       location='json')
-  parser.parse_args()
   args = parser.parse_args()
-
-  if(not email_validator(args['email'])):
-    return abort(
-        Response(
-            json.dumps({"message": "email is invalid", "code": 400, "status": "FAIL"}),
-            mimetype="application/json",
-            status=400,
-        )
-    )
+  email_validator(args['email'])
   return args
+
+def user_auth_validation():
+    parser = reqparse.RequestParser(
+        argument_class=APIArgument,
+        bundle_errors=True
+    )
+    parser.add_argument('email', type=str, location='json', help="Email is required for auth", required=True)
+    parser.add_argument('password', type=str, location='json', help="Password is required", required=True)
+    args = parser.parse_args()
+    email_validator(args['email'])
+    return args

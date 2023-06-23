@@ -6,6 +6,7 @@ from application import app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from src.model.user import user_model
+from flask_jwt_extended import JWTManager
 
 # Set up logging configuration
 import logging
@@ -25,6 +26,7 @@ port = int(os.getenv('PORT', 5000))
 ## Register routes
 app.register_blueprint(user_routes)
 
+jwt = JWTManager(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
