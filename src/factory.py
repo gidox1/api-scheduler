@@ -31,6 +31,11 @@ class ServiceFactory:
     logger = ServiceFactory.get_logger()
     service = UserService(logger)
     return UserController(service)
+  
+  @staticmethod
+  def get_user_service() -> UserService:
+    logger = ServiceFactory.get_logger()
+    return UserService(logger)
 
   @staticmethod
   def get_connection() -> Connection:

@@ -19,9 +19,12 @@ class APIArgument(Argument):
     )
     return abort(res)
 
+
 """
     Validate request data for user creation
 """
+
+
 def user_creation_validation():
   parser = reqparse.RequestParser(
       argument_class=APIArgument,
@@ -68,13 +71,35 @@ def user_creation_validation():
   email_validator(args['email'])
   return args
 
+
 def user_auth_validation():
+  parser = reqparse.RequestParser(
+      argument_class=APIArgument,
+      bundle_errors=True
+  )
+  parser.add_argument(
+      'email',
+      type=str,
+      location='json',
+      help="Email is required for auth",
+      required=True)
+  parser.add_argument(
+      'password',
+      type=str,
+      location='json',
+      help="Password is required",
+      required=True)
+  args = parser.parse_args()
+  email_validator(args['email'])
+  return args
+
+def list_users_validation():
     parser = reqparse.RequestParser(
         argument_class=APIArgument,
         bundle_errors=True
     )
-    parser.add_argument('email', type=str, location='json', help="Email is required for auth", required=True)
-    parser.add_argument('password', type=str, location='json', help="Password is required", required=True)
+    parser.add_argument('page', type=int, location="json", help="Current page", required=True)
+    parser.add_argument('per_page', type=int, location="json", help="The number of items per page", required=True)
+    
     args = parser.parse_args()
-    email_validator(args['email'])
     return args
