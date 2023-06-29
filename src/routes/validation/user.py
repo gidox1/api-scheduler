@@ -1,30 +1,11 @@
-import json
 from flask_restful import reqparse
-from flask import Response, abort
-from flask_restful.reqparse import Argument
 from src.common import email_validator, validate_length
-
-
-class APIArgument(Argument):
-  def __init__(self, *args, **kwargs):
-    super(APIArgument, self).__init__(*args, **kwargs)
-
-  def handle_validation_error(self, error, bundle_errors):
-    help_str = "(%s) " % self.help if self.help else ""
-    msg = "[%s]: %s%s" % (self.name, help_str, str(error))
-    res = Response(
-        json.dumps({"message": msg, "code": 400, "status": "FAIL"}),
-        mimetype="application/json",
-        status=400,
-    )
-    return abort(res)
+from src.common import APIArgument
 
 
 """
     Validate request data for user creation
 """
-
-
 def user_creation_validation():
   parser = reqparse.RequestParser(
       argument_class=APIArgument,
@@ -67,6 +48,11 @@ def user_creation_validation():
           'SUPER_ADMIN'),
       help='Invalid role',
       location='json')
+  parser.add_argument(
+      'phone_number',
+      type=str,
+      location="json",
+      help="user phone number is required")
   args = parser.parse_args()
   email_validator(args['email'])
   return args
@@ -93,13 +79,24 @@ def user_auth_validation():
   email_validator(args['email'])
   return args
 
+
 def list_users_validation():
-    parser = reqparse.RequestParser(
-        argument_class=APIArgument,
-        bundle_errors=True
-    )
-    parser.add_argument('page', type=int, location="json", help="Current page", required=True)
-    parser.add_argument('per_page', type=int, location="json", help="The number of items per page", required=True)
-    
-    args = parser.parse_args()
-    return args
+  parser = reqparse.RequestParser(
+      argument_class=APIArgument,
+      bundle_errors=True
+  )
+  parser.add_argument(
+      'page',
+      type=int,
+      location="json",
+      help="Current page",
+      required=True)
+  parser.add_argument(
+      'per_page',
+      type=int,
+      location="json",
+      help="The number of items per page",
+      required=True)
+
+  args = parser.parse_args()
+  return args

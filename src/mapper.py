@@ -1,4 +1,4 @@
-from src.model.user import User
+from src.models import User, Organization
 import enum
 
 
@@ -6,6 +6,13 @@ def map_user_data(user: User):
   user_dict = convert_to_dict(user)
   del user_dict['password']
   return user_dict
+
+
+def map_org_data(org: Organization):
+  org_dict = convert_to_dict(org)
+  owner = convert_to_dict(org.owner)
+  del owner['password']
+  return {**org_dict, "owner": owner}
 
 
 def convert_to_dict(model):

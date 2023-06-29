@@ -1,6 +1,6 @@
 from flask import Blueprint
 from src.factory import ServiceFactory
-from src.routes.validations import user_creation_validation, user_auth_validation, list_users_validation
+from src.routes.validation.user import user_creation_validation, user_auth_validation, list_users_validation
 from src.decorators import is_owned_by_user, validate_token
 
 user_routes = Blueprint("user", __name__, url_prefix="/user")

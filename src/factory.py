@@ -1,6 +1,8 @@
 from typing import Dict
 from src.service.user.index import UserService
+from src.service.organization.index import OrganizationService
 from src.controller.user import UserController
+from src.controller.organization import OrganizationController
 from pymysql import Connection
 from db import connection
 from flask import current_app
@@ -28,10 +30,9 @@ class ServiceFactory:
 
   @staticmethod
   def get_user_controller() -> UserController:
-    logger = ServiceFactory.get_logger()
-    service = UserService(logger)
+    service = ServiceFactory.get_user_service()
     return UserController(service)
-  
+
   @staticmethod
   def get_user_service() -> UserService:
     logger = ServiceFactory.get_logger()
@@ -40,3 +41,13 @@ class ServiceFactory:
   @staticmethod
   def get_connection() -> Connection:
     return connection()
+
+  @staticmethod
+  def get_org_service():
+    logger = ServiceFactory.get_logger()
+    return OrganizationService(logger)
+
+  @staticmethod
+  def get_org_controller():
+    service = ServiceFactory.get_org_service()
+    return OrganizationController(service)

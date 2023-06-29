@@ -1,13 +1,18 @@
 from enum import Enum
 import json
+import logging
 import os
 import re
 import bcrypt
 from flask import Response, abort
+from flask_restful.reqparse import Argument
+from flask_restful import reqparse
 
 """
   True-Myth Implementation to handle result from function calls
 """
+
+
 class Result:
   def __init__(self, success, value=None, error=None, status=None):
     self.success = success
@@ -40,6 +45,8 @@ class Result:
 """
   Enums
 """
+
+
 class UserStatus(Enum):
   ACTIVE = 'ACTIVE'
   INACTIVE = 'INACTIVE'
@@ -84,3 +91,25 @@ def hash_password(password) -> str:
   rounds = int(os.getenv('SALT_ROUND'))
   salt = bcrypt.gensalt(rounds=rounds)
   return bcrypt.hashpw(password.encode("utf-8"), salt)
+
+
+class APIArgument(Argument):
+  def __init__(self, *args, **kwargs):
+    super(APIArgument, self).__init__(*args, **kwargs)
+
+  def handle_validation_error(self, error, bundle_errors):
+    help_str = "(%s) " % self.help if self.help else ""
+    msg = "[%s]: %s%s" % (self.name, help_str, str(error))
+    res = Response(
+        json.dumps({"message": msg, "code": 400, "status": "FAIL"}),
+        mimetype="application/json",
+        status=400,
+    )
+    return abort(res)
+
+
+def handleError(e: Exception, message: str, logger: logging) -> Result:
+  logger.error(f"{message}: {repr(e)}")
+  return Result.failure({
+      "message": "An unexpected error occured"
+  })

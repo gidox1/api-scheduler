@@ -3,7 +3,7 @@ import logging
 
 from sqlalchemy.exc import IntegrityError, NoResultFound
 from db import get_session
-from src.model.user import User, verify_password
+from src.models import User, verify_password
 from src.common import Result, hash_password
 from src.mapper import map_user_data
 from flask_jwt_extended import create_access_token
@@ -13,7 +13,6 @@ class UserService:
   def __init__(self, logger: logging.Logger):
     self.logger = logger
     pass
-
 
   def get(self, _id):
     try:
@@ -35,7 +34,6 @@ class UserService:
       return Result.failure({
           "error": "An error occurred while fetching user. Please try again later."
       })
-
 
   def create(self, data) -> Result:
     self.logger.info(f"creating user account with email {data['email']}")
@@ -63,7 +61,6 @@ class UserService:
           "error": "An error occurred while creating the user. Please try again later."
       })
 
-
   def authenticate(self, data: Dict[str, str]) -> Result:
     email = data['email']
     password = data['password']
@@ -86,7 +83,8 @@ class UserService:
               "access_token": access_token
           })
         else:
-          self.logger.error(f'Invalid password for user: {user.email}')
+          self.logger.error(
+              f'Invalid credentials for user: {user.email}')
           return Result.failure({
               "message": "Invalid credentials",
               "status": 401
@@ -103,7 +101,6 @@ class UserService:
           "message": f'An unexpected error occured: {str(e)}'
       })
 
-
   def listUsers(self, filters):
     per_page = filters['per_page']
     page = filters['page']
@@ -112,9 +109,9 @@ class UserService:
     try:
       with get_session() as session:
         skip = (page - 1) * per_page
-        users = session.query(User).order_by(sort_by).limit(per_page).offset(skip).all()
+        users = session.query(User).order_by(
+            sort_by).limit(per_page).offset(skip).all()
         user_list = [{**map_user_data(user)} for user in users]
-        print(user_list, "user_list")
         self.logger.info(f'Retrieved users successfully')
         return Result.success({
             "message": "users retrieved successfully",
@@ -125,7 +122,6 @@ class UserService:
       return Result.failure({
           "error": "An error occurred while fetching user. Please try again later."
       })
-
 
   def delete(self, user_id):
     try:

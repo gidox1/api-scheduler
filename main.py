@@ -2,10 +2,11 @@ import configparser
 import os
 from dotenv import load_dotenv
 from src.routes.user import user_routes
+from src.routes.organization import organization_routes
 from application import app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
-from src.model.user import user_model
+from src.models import loadModels
 from flask_jwt_extended import JWTManager
 
 # Set up logging configuration
@@ -25,12 +26,14 @@ port = int(os.getenv('PORT', 5000))
 
 ## Register routes
 app.register_blueprint(user_routes)
+app.register_blueprint(organization_routes)
 
 jwt = JWTManager(app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
-user_model()
+# Load models
+loadModels()
 
 if __name__ == "__main__":
   app.run(host="localhost", port=port, debug=True)

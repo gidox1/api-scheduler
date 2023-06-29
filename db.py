@@ -2,7 +2,7 @@ import os
 import pymysql
 from pymysql import Connection
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, Session as dbSession
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from application import app
@@ -29,10 +29,12 @@ def connection() -> Connection:
   except Exception as e:
     print("failed to connect to database", e)
 
-def get_session():
+def get_session(trx=False):
   pymysql_connection_string = f'mysql+pymysql://{user}:{password}@{host}/{database}'
   engine = create_engine(pymysql_connection_string)
   Session = sessionmaker(bind=engine)
+  if trx:
+    return dbSession(engine)
   return Session()
 
 def get_connection_string() -> str:
