@@ -108,8 +108,13 @@ class APIArgument(Argument):
     return abort(res)
 
 
-def handleError(e: Exception, message: str, logger: logging) -> Result:
+def handleError(
+        e: Exception,
+        message: str,
+        logger: logging,
+        status=500) -> Result:
   logger.error(f"{message}: {repr(e)}")
   return Result.failure({
-      "message": "An unexpected error occured"
+      "message": "An unexpected error occured",
+      "status": status
   })

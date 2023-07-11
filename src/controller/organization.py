@@ -1,14 +1,14 @@
-from src.service.organization.index import OrganizationService
+from src.service.organization import OrganizationService
 from src.common import extract, Result
 from flask import jsonify, request
 
 
 class OrganizationController:
-    def __init__(self, service: OrganizationService):
-        self.service = service
-        pass
+  def __init__(self, service: OrganizationService):
+    self.service = service
+    pass
 
-    """
+  """
     Gets a single organization
 
     Args:
@@ -18,13 +18,13 @@ class OrganizationController:
       tuple: A tuple containing the JSON response and the HTTP status code.
   """
 
-    def get(self, org_id, user_id):
-        result = self.service.get(org_id, user_id)
-        if Result.isError(result):
-            return jsonify(result.error), 500
-        return jsonify(result.value), 201
+  def get(self, org_id, user_id):
+    result = self.service.get(org_id, user_id)
+    if Result.isError(result):
+      return jsonify(result.error), 500
+    return jsonify(result.value), 201
 
-    """
+  """
     Creates a new Organization.
 
     Args:
@@ -34,17 +34,17 @@ class OrganizationController:
       tuple: A tuple containing the JSON response and the HTTP status code.
   """
 
-    def create(self, data):
-        data = extract(
-            data, [
-                'name', 'country', 'city', 'address', 'owner_id'])
-        result = self.service.create(data)
-        if Result.isError(result):
-            return jsonify(
-                result.error), result.status if result.status is not None else 500
-        return jsonify(result.value), 200
+  def create(self, data):
+    data = extract(
+        data, [
+            'name', 'country', 'city', 'address', 'owner_id'])
+    result = self.service.create(data)
+    if Result.isError(result):
+      return jsonify(
+          result.error), result.status if result.status is not None else 500
+    return jsonify(result.value), 200
 
-    """
+  """
     List Organizations based on pagination config
 
     Args:
@@ -54,14 +54,14 @@ class OrganizationController:
       tuple: A tuple containing the JSON response and the HTTP status code.
   """
 
-    def listOrgs(self, filters):
-        result = self.service.listOrgs(filters)
-        if Result.isError(result):
-            return jsonify(
-                result.error), result.status if result.status is not None else 500
-        return jsonify(result.value), 200
+  def listOrgs(self, filters):
+    result = self.service.listOrgs(filters)
+    if Result.isError(result):
+      return jsonify(
+          result.error), result.status if result.status is not None else 500
+    return jsonify(result.value), 200
 
-    """
+  """
     Delete an Organization
 
     Args:
@@ -71,14 +71,14 @@ class OrganizationController:
       tuple: A tuple containing the JSON response and the HTTP status code.
   """
 
-    def delete(self, org_id, user_id):
-        result = self.service.delete(org_id, user_id)
-        if Result.isError(result):
-            return jsonify(
-                result.error), result.status if result.status is not None else 500
-        return jsonify(result.value), 200
+  def delete(self, org_id, user_id):
+    result = self.service.delete(org_id, user_id)
+    if Result.isError(result):
+      return jsonify(
+          result.error), result.status if result.status is not None else 500
+    return jsonify(result.value), 200
 
-    """
+  """
     Update an Organization
 
     Args:
@@ -89,9 +89,9 @@ class OrganizationController:
       tuple: A tuple containing the JSON response and the HTTP status code.
   """
 
-    def update(self, data, user_id, org_id):
-        result = self.service.update(data, user_id, org_id)
-        if Result.isError(result):
-          return jsonify(
-              result.error), result.status if result.status is not None else 500
-        return jsonify(result.value), 200
+  def update(self, data, user_id, org_id):
+    result = self.service.update(data, user_id, org_id)
+    if Result.isError(result):
+      return jsonify(
+          result.error), result.status if result.status is not None else 500
+    return jsonify(result.value), 200

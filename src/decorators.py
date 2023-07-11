@@ -30,11 +30,24 @@ def is_owned_by_user(func):
 def admin_route_guard(func):
   @jwt_required()
   @wraps(func)
-  def wrapper(org_id, *args, **kwargs):
+  def wrapper(*args, **kwargs):
     decoded_token = get_jwt_identity()
-    if decoded_token['role'] != 'ADMIN':
+    if decoded_token['role'] != 'ADMIN' and decoded_token['role'] != 'SUPER_ADMIN':
       return jsonify({
           "error": "You do not have sufficient privileges to access this resource."
       }), 401
-    return func(org_id, *args, **kwargs)
+    return func(*args, **kwargs)
+  return wrapper
+
+
+def super_admin_route_guard(func):
+  @jwt_required()
+  @wraps(func)
+  def wrapper(*args, **kwargs):
+    decoded_token = get_jwt_identity()
+    if decoded_token['role'] != 'SUPER_ADMIN':
+      return jsonify({
+          "error": "You do not have sufficient privileges to access this resource."
+      }), 401
+    return func(*args, **kwargs)
   return wrapper

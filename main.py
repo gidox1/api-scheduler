@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from src.routes.user import user_routes
 from src.routes.organization import organization_routes
+from src.routes.franchise import franchise_routes
 from application import app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -27,6 +28,7 @@ port = int(os.getenv('PORT', 5000))
 ## Register routes
 app.register_blueprint(user_routes)
 app.register_blueprint(organization_routes)
+app.register_blueprint(franchise_routes)
 
 jwt = JWTManager(app)
 db = SQLAlchemy(app)

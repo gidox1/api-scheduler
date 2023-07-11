@@ -1,6 +1,6 @@
 import json
 from flask import Response, abort
-from src.common import APIArgument, filter_none
+from src.common import APIArgument
 from flask_restful import reqparse
 
 

@@ -6,6 +6,8 @@ from src.common import APIArgument
 """
     Validate request data for user creation
 """
+
+
 def user_creation_validation():
   parser = reqparse.RequestParser(
       argument_class=APIArgument,

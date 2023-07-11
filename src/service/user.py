@@ -7,6 +7,7 @@ from src.models import User, verify_password
 from src.common import Result, hash_password
 from src.mapper import map_user_data
 from flask_jwt_extended import create_access_token
+from datetime import timedelta
 
 
 class UserService:
@@ -75,7 +76,8 @@ class UserService:
                   "email": user.email,
                   "id": user.id,
                   "role": str(user.role.value)
-              }
+              },
+              expires_delta=timedelta(hours=1)
           )
           self.logger.info(f'User authenticated: {user.email}')
           return Result.success({

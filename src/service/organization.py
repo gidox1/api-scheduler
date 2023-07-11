@@ -2,7 +2,7 @@ import logging
 
 from src.common import Result, handleError
 from db import get_session
-from src.models import Organization
+from src.models import Organization, User
 from src.mapper import convert_to_dict, map_org_data
 from sqlalchemy.exc import NoResultFound
 from sqlalchemy.orm import joinedload
@@ -12,7 +12,6 @@ class OrganizationService:
   def __init__(self, logger: logging.Logger):
     self.logger = logger
     pass
-
 
   def create(self, data):
     dbSession = get_session(True)
@@ -44,7 +43,6 @@ class OrganizationService:
             "message": "organization created successfully",
             "data": convert_to_dict(org)
         })
-
 
   def update(self, data, user_id, org_id):
     self.logger.info(f"Updating organization data for og with id {org_id}")
@@ -82,7 +80,6 @@ class OrganizationService:
         message = "Failed to update organization"
         return handleError(e, message, self.logger)
 
-
   def delete(self, org_id, user_id):
     self.logger.info(
         f"started process of deleting organization with id {org_id} by user {user_id}")
@@ -110,7 +107,6 @@ class OrganizationService:
       message = "Failed to fetch organization"
       return handleError(e, message, self.logger)
 
-
   def get(self, org_id, user_id):
     self.logger.info(f"Fetching data for organization with id {org_id}")
     with get_session() as session:
@@ -137,7 +133,6 @@ class OrganizationService:
       except Exception as e:
         message = "Failed to fetch organization"
         return handleError(e, message, self.logger)
-
 
   def listOrgs(self):
     pass

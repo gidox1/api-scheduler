@@ -1,6 +1,6 @@
 from flask import Blueprint
 from src.factory import ServiceFactory
-from src.decorators import admin_route_guard, validate_token
+from src.decorators import validate_token, super_admin_route_guard
 from src.routes.validation.organization import validate_create_request, validate_update_request
 from flask_jwt_extended import get_jwt_identity
 
@@ -14,6 +14,7 @@ controller = ServiceFactory.get_org_controller()
 @organization_routes.route('/', methods=['POST'])
 @organization_routes.route('', methods=['POST'])
 @validate_token
+@super_admin_route_guard
 def create():
   # validate request
   data = validate_create_request()
@@ -32,7 +33,7 @@ def get(org_id):
 @organization_routes.route('/<int:org_id>', methods=['PATCH'])
 @organization_routes.route('/<int:org_id>', methods=['PATCH'])
 @validate_token
-@admin_route_guard
+@super_admin_route_guard
 def update(org_id):
   # validate request
   data = validate_update_request()
@@ -43,7 +44,7 @@ def update(org_id):
 @organization_routes.route('/<int:org_id>', methods=['DELETE'])
 @organization_routes.route('/<int:org_id>', methods=['DELETE'])
 @validate_token
-@admin_route_guard
+@super_admin_route_guard
 def delete(org_id):
   user_id = (get_jwt_identity())['id']
   return controller.delete(org_id, user_id)

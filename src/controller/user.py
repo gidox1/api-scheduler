@@ -1,4 +1,4 @@
-from src.service.user.index import UserService
+from src.service.user import UserService
 from src.common import extract, Result
 from flask import jsonify, request
 
